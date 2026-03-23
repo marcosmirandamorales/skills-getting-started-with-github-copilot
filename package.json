@@ -1,0 +1,26 @@
+{
+  "name": "mergington-activities",
+  "version": "1.0.0",
+  "description": "Mergington High School Activities API",
+  "main": "src/app.py",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage"
+  },
+  "jest": {
+    "testEnvironment": "jsdom",
+    "testMatch": [
+      "**/__tests__/**/*.js",
+      "**/*.test.js"
+    ],
+    "collectCoverageFrom": [
+      "src/static/**/*.js",
+      "!src/static/**/*.test.js"
+    ]
+  },
+  "devDependencies": {
+    "jest": "^29.0.0",
+    "jest-environment-jsdom": "^29.0.0"
+  }
+}
